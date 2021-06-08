@@ -1,0 +1,5 @@
+<h3>Post number - <%= @post.id %></h3><br>
+<b>Name - </b><span><%= @post.title %></span><br>
+<h4><b>The post - </b><span><%= @post.body %></span></h4>
+<hr>
+<%= link_to "Edit", edit_admin_post_path(@post) , class: "btn btn-warning" %>

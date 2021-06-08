@@ -2,6 +2,5 @@
 <% @posts.each do |post| %>
   <p><b>Name of post -</b> <%= post.title %></p>
   <p><b>Name of post -</b> <%= post.body %></p>
-  <%= link_to "Read more", post_path(post) , {:class => "btn btn-outline-info"}%>
   <hr>
 <% end %>

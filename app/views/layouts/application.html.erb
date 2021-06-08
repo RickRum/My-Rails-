@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+   <% if controller_path =~ /^admin\// %>
+
+      <%= render "admin/admin-shared/header" %>
+
+    <% else %>
+      <%= render "shared/header" %>
+    <% end %>
+
+    <div class="container"><%= yield %></div>
   </body>
 </html>
